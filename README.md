@@ -34,4 +34,24 @@ These scripts illustrate how to:
 2. Wire agents together into LangGraph workflows that pass messages between them.
 3. Extend workflows with asynchronous tasks and file output.
 
+## Scripts
+
+The repository includes several standalone examples that can be run individually:
+
+- **`langchain_basics.py`** – a minimal script showing the LangChain Expression
+  Language (LCEL). It creates a simple chain that translates a word to French
+  and German and then checks the result using a second chain.
+- **`simple_langgraph.py`** – demonstrates LangGraph fundamentals with a single
+  agent that can fetch the weather and generate images using tools.
+- **`multi_agent.py`** – builds a full team of agents managed by a supervisor.
+  The team collaborates to produce a travel itinerary with an image and final
+  PDF output.
+- **`web_research.py`** – an asynchronous workflow that performs a Tavily search
+  and then gathers webpage content concurrently before writing the result to a
+  markdown file.
+- **`setup_environment.py`** – helper for loading API keys and setting the
+  LangChain project name via environment variables.
+- **`multi_agent_prompts.py`** and **`web_research_prompts.py`** – store the
+  system prompts used by the main workflows.
+
 
