@@ -1,17 +1,105 @@
-# Building complex multi-agent teams and setups using LangGraph.
+# 🌐 Building Complex Multi-Agent Teams and Workflows using LangGraph
 
-This repository contains the finished code for the "Building complex multi-agent teams and setups using LangGraph" 
+This repository showcases progressively complex multi-agent workflows built using **LangGraph** and **LangChain**. The examples begin with simple chains and evolve into full-fledged, asynchronous multi-agent systems capable of executing intricate tasks like travel planning and web research.
 
+---
 
-## Introduction
+## 📘 Project Overview
 
+The project is a step-by-step tutorial demonstrating:
 
+- Building agents with custom system prompts and tools
+- Connecting agents into workflows using LangGraph
+- Orchestrating asynchronous agents and file generation tasks
 
-- In part 1, we'll get started with the basics of LangChain, learning how to create prompt templates and Chains, working with the LangChain syntax to easily string together our LLM calls.
-- In the next part we'll learn how to write tools so that we can make our future agents powerful by giving them functions they can call. We will use the newest LangChain syntax for this and create both an image generation tool and a weather tool.
-- Part 3 is where we will learn the basics of LangGraph, covering the underlying concepts and exactly how it works. We will learn by setting up our first agent and graph which can return a visual representation of the current weather in any city you name.
-- In part 4 we'll look at how we can take this all to yet the next level, discussing how we can use all of this to create a whole team of agents working together for us. We'll also write a tool that can output PDF files in preparation for our multi-agent setup.
-- Part 5 is where the rubber really hits the road and we will create a powerful multi-agent setup in LangGraph using a team, team manager, many agents, conditional paths, and more. We will create a team that can work together independently and create travel itineraries for us, providing them in PDF format with an inserted image and a full travel plan.
-- In the final part we'll have a look at writing asynchronous tools for our agents and then create a web research and article writing graph that can visit many web pages at the same time and then write an article about our desired topic for us.
+---
 
+## 🧱 Modules Breakdown
 
+### 🔹 Part 1 – LangChain Basics (`langchain_basics.py`)
+- Learn LangChain fundamentals
+- Create prompt templates and simple translation chains
+
+### 🔹 Part 2 – Agent Tools (`tools/`)
+- Implement tools like:
+  - Image generation
+  - Weather data retrieval
+  - PDF export
+  - Asynchronous web scraping
+
+### 🔹 Part 3 – Simple LangGraph (`simple_langgraph.py`)
+- Create a single agent workflow
+- Loop agent with a tool executor until completion
+
+### 🔹 Part 4 – Multi-Agent Setup (`multi_agent.py`)
+- Introduce a team of agents (e.g., travel agent, designer)
+- Add PDF generation capabilities
+
+### 🔹 Part 5 – Advanced Multi-Agent Workflow (`multi_agent.py`)
+- Expand the agent team into a fully coordinated system
+- Build end-to-end travel itineraries with images and PDF output
+
+### 🔹 Final – Web Research Workflow (`web_research.py`)
+- Incorporate asynchronous tools
+- Fetch and summarize online content
+- Output a markdown-based article
+
+---
+
+## 🗂️ Repository Contents
+
+| File / Folder                  | Description |
+|-------------------------------|-------------|
+| `langchain_basics.py`         | Basic LangChain usage and expression chains |
+| `simple_langgraph.py`         | Simple looping agent using LangGraph |
+| `multi_agent.py`              | Multi-agent team with a supervisor and PDF output |
+| `web_research.py`             | Asynchronous agents for web search and content writing |
+| `tools/`                      | Utilities for image creation, weather, PDFs, web scraping |
+| `setup_environment.py`        | Loads API keys and sets LangChain project name |
+| `multi_agent_prompts.py`      | System prompts for multi-agent workflows |
+| `web_research_prompts.py`     | Prompts for the web research workflow |
+
+---
+
+## 🧠 Key Learnings
+
+Through these examples, you'll learn how to:
+
+1. 🧩 **Define modular agents** using system prompts and tools.
+2. 🔄 **Create agent workflows** using LangGraph’s `StateGraph` to manage message passing.
+3. ⚙️ **Build asynchronous pipelines** to integrate web data, analyze content, and generate files.
+
+---
+
+## 🚀 Get Started
+
+To run any script:
+```bash
+python path/to/script.py
+```
+
+Make sure to configure your environment using:
+```bash
+python setup_environment.py
+```
+
+Set API keys for any external services (e.g., OpenAI, weather, Tavily).
+
+---
+
+## 🧰 Requirements
+
+- Python 3.9+
+- LangChain
+- LangGraph
+- Additional APIs (OpenAI, Tavily, etc.)
+
+---
+
+## 📄 License
+
+This project is provided for educational purposes and experimentation. Check individual dependencies for their licenses.
+
+---
+
+Feel free to contribute, explore, and build your own agentic workflows with LangGraph!
