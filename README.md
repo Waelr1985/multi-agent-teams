@@ -1,4 +1,4 @@
-# Finxter Academy - Building complex multi-agent teams and setups using LangGraph.
+# Building complex multi-agent teams and setups using LangGraph.
 
 This repository contains the finished code for the "Building complex multi-agent teams and setups using LangGraph" course on the Finxter Academy. Head over to the Finxter academy to enroll in the course with both written and video tutorials.
 
